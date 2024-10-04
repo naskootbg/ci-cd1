@@ -20,7 +20,7 @@ app.listen(port, () => {
 })
 .on('error', function(err) {
   if (err.errno === 'EADDRINUSE')
-    console.error(`Port ${port} busy.`);
+    console.error(`Port ${port} too busy.`);
   else 
     throw err;
 });
